@@ -29,8 +29,8 @@ galleryLink.forEach((link) => {
 });
 
 // basiclightbox
-const galleryItem = document.querySelectorAll(".gallery__image");
-galleryItem.forEach((image) => {
+const galleryImg = document.querySelectorAll(".gallery__image");
+galleryImg.forEach((image) => {
   image.addEventListener("click", (event) => {
     const imageXL = event.target.dataset.source;
     const instance = basicLightbox.create(
